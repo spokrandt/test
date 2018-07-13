@@ -1,5 +1,5 @@
-FROM ruby:2.3
-UN apt-get update \
+FROM ruby:2.5.1
+RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        mysql \
     && rm -rf /var/lib/apt/lists/*
