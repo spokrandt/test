@@ -9,6 +9,6 @@ RUN bundle install
 COPY . .
 
 EXPOSE 3000
-CMD ["rails", "db:migrate", "RAILS_ENV=development"]
+entrypoint: ["./entry-point.sh"]
 CMD ["rails", "server", "-b", "0.0.0.0"]
 
