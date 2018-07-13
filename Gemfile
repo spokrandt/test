@@ -68,6 +68,4 @@ gem 'devise'
 gem 'cancancan', '~> 2.0'
 gem 'pry'
 
-gem "blogit"
-# Blogit depends on ActsAsTaggableOn
-gem "acts-as-taggable-on"
+#gem 'menu'
