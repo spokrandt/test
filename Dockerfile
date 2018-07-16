@@ -17,7 +17,7 @@ RUN \
   chmod uog+r /etc/gemrc && \
 
   # cleanup and settings
-  bundle config --global build.nokogiri  "--use-system-libraries" && \
+  bundle config --global build.nokogiri && \
   bundle config --global build.nokogumbo "--use-system-libraries" && \
   find / -type f -iname \*.apk-new -delete && \
   rm -rf /var/cache/apk/* && \
