@@ -25,6 +25,6 @@ RUN \
   rm -rf ~/.gem
 
 EXPOSE 3000
-RUN rails db:migrate RAILS_ENV=development
+RUN bin/rails db:migrate RAILS_ENV=development
 CMD ["rails", "server", "-b", "0.0.0.0"]
 
