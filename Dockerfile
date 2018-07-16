@@ -9,7 +9,7 @@ RUN \
   gem install -N bundler
  
 RUN \
-  gem install pkg-config -v "~> 1.1" && \
+  gem install -N pkg-config -v "~> 1.1" && \
   gem install -N nokogiri -- --use-system-libraries && \
   gem install -N rails --version "$RAILS_VERSION" && \
   echo 'gem: --no-document' >> ~/.gemrc && \
