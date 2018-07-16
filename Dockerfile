@@ -10,7 +10,7 @@ RUN \
  
 RUN \
   gem install -N pkg-config -v "~> 1.1" && \
-  gem install -N nokogiri -- --use-system-libraries && \
+  gem install -N nokogiri && \
   gem install -N rails --version "$RAILS_VERSION" && \
   echo 'gem: --no-document' >> ~/.gemrc && \
   cp ~/.gemrc /etc/gemrc && \
