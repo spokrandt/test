@@ -7,8 +7,10 @@ ENV BUILD_PACKAGES="curl-dev ruby-dev build-base" \
 RUN \
   apk --update --upgrade add $BUILD_PACKAGES $RUBY_PACKAGES $DEV_PACKAGES && \
   gem install -N bundler
-  
-RUN gem install -N nokogiri -- --use-system-libraries && \
+ 
+RUN \
+  gem install pkg-config -v "~> 1.1" && \
+  gem install -N nokogiri -- --use-system-libraries && \
   gem install -N rails --version "$RAILS_VERSION" && \
   echo 'gem: --no-document' >> ~/.gemrc && \
   cp ~/.gemrc /etc/gemrc && \
