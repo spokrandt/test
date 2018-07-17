@@ -23,7 +23,7 @@ RUN \
   rm -rf /var/cache/apk/* && \
   rm -rf /usr/lib/lib/ruby/gems/*/cache/* && \
   rm -rf ~/.gem
-
+COPY . .
 EXPOSE 3000
 #ENTRYPOINT ["bin/entry"]
 #CMD ["rails","server","-b","0.0.0.0","-p","3000"]
