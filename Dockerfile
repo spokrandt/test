@@ -25,5 +25,5 @@ RUN \
   rm -rf ~/.gem
 
 EXPOSE 3000
-ENTRYPOINT ["entry"]
+ENTRYPOINT ["bin/entry"]
 CMD ["rails","server","-b","0.0.0.0","-p","3000"]
