@@ -12,7 +12,8 @@ RUN adduser -S app -h /app ; \
     gem install -N rb-fsevent -v '0.10.3'; \
     gem install -N ffi -v '1.9.25'; \
     gem install -N rb-inotify -v '0.9.10'; \ 
-    gem install -N sass-listen -v '4.0.0'
+    gem install -N sass-listen -v '4.0.0'; \
+    gem install -N sass -v '3.5.6'
 USER app 
 COPY . /app
 WORKDIR /app
