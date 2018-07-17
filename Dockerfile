@@ -22,8 +22,9 @@ RUN \
   find / -type f -iname \*.apk-new -delete && \
   rm -rf /var/cache/apk/* && \
   rm -rf /usr/lib/lib/ruby/gems/*/cache/* && \
-  rm -rf ~/.gem
-COPY . .
+  rm -rf ~/.gem \
+  mkdir /app
+COPY . /app
 EXPOSE 3000
-#ENTRYPOINT ["bin/entry"]
-#CMD ["rails","server","-b","0.0.0.0","-p","3000"]
+ENTRYPOINT ["/app/bin/entry"]
+CMD ["/app/bin/rails","server","-b","0.0.0.0","-p","3000"]
