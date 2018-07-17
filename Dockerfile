@@ -1,5 +1,6 @@
 FROM spokrandt/alpine-rails5:latest 
 RUN adduser -S app -h /app ; \
+    chown app /app; \
     gem install -N io-like -v '0.3.0'; \
     gem install -N archive-zip -v '0.11.0'; \
     gem install -N execjs -v '2.7.0'; \
