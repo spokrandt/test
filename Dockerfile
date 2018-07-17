@@ -1,5 +1,5 @@
 FROM spokrandt/alpine-rails5:latest 
-RUN adduser -S app \
+RUN adduser -S app; \
     gem install public_suffix -v '3.0.2' --source
 USER app
 COPY . /app
