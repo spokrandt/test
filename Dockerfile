@@ -9,7 +9,8 @@ RUN adduser -S app ; \
     gem install -N msgpack -v '1.2.4'; \
     gem install -N bootsnap -v '1.3.1'; \
     gem install -N popper_js -v '1.12.9'; \
-    gem install -N rb-fsevent -v '0.10.3'
+    gem install -N rb-fsevent -v '0.10.3'; \
+    gem install -N ffi -v '1.9.25'
 USER app 
 COPY . /app
 WORKDIR /app
