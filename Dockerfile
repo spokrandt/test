@@ -25,8 +25,8 @@ RUN \
   rm -rf ~/.gem
 
 EXPOSE 3000
-RUN pwd;ls -lR /;echo $PATH
 #RUN ~/bin/rails db:migrate RAILS_ENV=development
-CMD ["rails", "db:migrate", "RAILS_ENV=development"]
-CMD ["rails", "server", "-b", "0.0.0.0"]
-
+#CMD ["rails", "db:migrate", "RAILS_ENV=development"]
+#CMD ["rails", "server", "-b", "0.0.0.0"]
+ENTRYPOINT: [bin/entry]
+command: ["rails","server","-b","0.0.0.0","-p","3000"]
