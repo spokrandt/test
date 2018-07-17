@@ -13,7 +13,8 @@ RUN adduser -S app -h /app ; \
     gem install -N ffi -v '1.9.25'; \
     gem install -N rb-inotify -v '0.9.10'; \ 
     gem install -N sass-listen -v '4.0.0'; \
-    gem install -N sass -v '3.5.6'
+    gem install -N sass -v '3.5.6'; \
+    gem install -N bootstrap -v '4.1.1'
 USER app 
 COPY . /app
 WORKDIR /app
