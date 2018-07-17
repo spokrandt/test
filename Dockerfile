@@ -16,7 +16,8 @@ RUN adduser -S app -h /app ; \
     gem install -N sass-listen -v '4.0.0'; \
     gem install -N sass -v '3.5.6'; \
     gem install -N bootstrap -v '4.1.1'; \
-    gem install -N bootstrap-sass-extras -v '0.0.7'
+    gem install -N bootstrap-sass-extras -v '0.0.7': \
+    gem install -N byebug -v '10.0.2'
 USER app 
 COPY . /app
 WORKDIR /app
