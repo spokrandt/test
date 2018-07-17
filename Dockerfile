@@ -1,5 +1,6 @@
 FROM spokrandt/alpine-rails5:latest 
 RUN adduser -S app
+RUN gem install io-like -v '0.3.0'
 USER app 
 COPY . /app
 WORKDIR /app
