@@ -1,4 +1,5 @@
 FROM spokrandt/alpine-rails5:latest 
+RUN adduser app
 USER app
 COPY . /app
 WORKDIR /app
