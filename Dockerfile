@@ -6,7 +6,8 @@ RUN adduser -S app ; \
     gem install -N autoprefixer-rails -v '8.6.5'; \
     gem install -N bcrypt -v '3.1.12' ; \
     gem install -N bindex -v '0.5.0'; \
-    gem install -N msgpack -v '1.2.4' 
+    gem install -N msgpack -v '1.2.4'; \
+    gem install -N bootsnap -v '1.3.1'
 USER app 
 COPY . /app
 WORKDIR /app
