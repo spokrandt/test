@@ -26,7 +26,8 @@ RUN adduser -S app -h /app -s /bin/sh; \
     gem install -N coderay -v '1.1.2'; \
     gem install -N coffee-script-source -v '1.12.2'; \
     gem install -N coffee-script -v '2.4.1'; \
-    gem install -N coffee-rails -v '4.2.2'
+    gem install -N coffee-rails -v '4.2.2'; \
+    gem install -N orm_adapter -v '0.5.0'
 USER app 
 COPY . /app
 WORKDIR /app
