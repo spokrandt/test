@@ -23,7 +23,8 @@ RUN adduser -S app -h /app ; \
     gem install -N capybara -v '3.3.1'; \
     gem install -N childprocess -v '0.9.0'; \
     gem install -N chromedriver-helper -v '1.2.0';  \
-    gem install -N coderay -v '1.1.2'
+    gem install -N coderay -v '1.1.2'; \
+    gem install -N coffee-script-source -v '1.12.2'
 USER app 
 COPY . /app
 WORKDIR /app
