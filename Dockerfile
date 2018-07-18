@@ -33,7 +33,8 @@ RUN adduser -S app -h /app -s /bin/sh; \
     gem install -N devise -v '4.4.3'; \
     gem install -N multi_json -v '1.13.1'; \
     gem install -N jbuilder -v '2.7.0' ; \
-    gem install -N jquery-rails -v '4.3.3'
+    gem install -N jquery-rails -v '4.3.3'; \
+    gem install -N libv8 -v '6.7.288.46.1'
 USER app 
 COPY . /app
 WORKDIR /app
