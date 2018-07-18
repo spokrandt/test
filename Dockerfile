@@ -20,7 +20,7 @@ RUN adduser -S app -h /app ; \
     gem install -N byebug -v '10.0.2'; \
     gem install -N cancancan -v '2.2.0'; \
     gem install  N xpath -v '3.1.0'; \
-    gem install -N capybara -v '3.3.1
+    gem install -N capybara -v '3.3.1'
 USER app 
 COPY . /app
 WORKDIR /app
