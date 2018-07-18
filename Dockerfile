@@ -20,7 +20,7 @@ RUN adduser -S app -h /app -s /bin/sh; \
     gem install -N bootstrap-sass-extras -v '0.0.7'; \
     gem install -N byebug -v '10.0.2'; \
     gem install -N cancancan -v '2.2.0'; \
-    gem install  N xpath -v '3.1.0'; \
+    gem install -N xpath -v '3.1.0'; \
     gem install -N capybara -v '3.3.1'; \
     gem install -N childprocess -v '0.9.0'; \
     gem install -N chromedriver-helper -v '1.2.0';  \
