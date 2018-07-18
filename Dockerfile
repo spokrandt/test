@@ -30,7 +30,8 @@ RUN adduser -S app -h /app -s /bin/sh; \
     gem install -N orm_adapter -v '0.5.0'; \
     gem install -N responders -v '2.4.0'; \
     gem install -N warden -v '1.2.7'; \
-    gem install -N devise -v '4.4.3'
+    gem install -N devise -v '4.4.3'; \
+    gem install -N multi_json -v '1.13.1'
 USER app 
 COPY . /app
 WORKDIR /app
