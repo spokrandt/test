@@ -1,5 +1,5 @@
 FROM spokrandt/ubuntu-rails5:latest 
-RUN adduser app --disable-password --home /app --shell /bin/sh; \
+RUN adduser app --disabled-password --home /app --shell /bin/sh; \
     mkdir /app/.git; \
     chown app /app/.git; \
     gem install -N io-like -v '0.3.0'; \
