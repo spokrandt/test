@@ -36,7 +36,8 @@ RUN adduser app --disabled-password --home /app --shell /bin/sh; \
     gem install -N jbuilder -v '2.7.0' ; \
     gem install -N jquery-rails -v '4.3.3'; \
     gem install -N libv8 -v  '6.7.288.46.1'; \
-    gem install -N minitest -v '5.11.3'
+    gem install -N minitest -v '5.11.3'; \
+    gem install ruby_dep -v '1.5.0'
 USER app 
 COPY . /app
 WORKDIR /app
