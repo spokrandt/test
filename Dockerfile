@@ -1,5 +1,5 @@
 FROM spokrandt/ubuntu-rails5:latest 
-RUN adduser app --home /app --shell /bin/sh; \
+RUN adduser app --disable-password --home /app --shell /bin/sh; \
     mkdir /app/.git; \
     chown app /app/.git; \
     gem install -N io-like -v '0.3.0'; \
@@ -35,7 +35,8 @@ RUN adduser app --home /app --shell /bin/sh; \
     gem install -N multi_json -v '1.13.1'; \
     gem install -N jbuilder -v '2.7.0' ; \
     gem install -N jquery-rails -v '4.3.3'; \
-    gem install -N libv8 -v  '6.7.288.46.1'
+    gem install -N libv8 -v  '6.7.288.46.1'; \
+    gem install -N minitest -v '5.11.3'
 USER app 
 COPY . /app
 WORKDIR /app
