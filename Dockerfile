@@ -4,6 +4,8 @@ RUN adduser app --disabled-password --home /app --shell /bin/sh; \
     mkdir /app/.bundle; \
     chown app /app/.git; \
     chown app /app/.bundle; \
+    chmod 777 /app/.git; \
+    chmod 777 /app/.bundle; \
     ls -laR /app; \
     gem install -N io-like -v '0.3.0'; \
     gem install -N archive-zip -v '0.11.0'; \
