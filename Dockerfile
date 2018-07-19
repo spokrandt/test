@@ -1,7 +1,9 @@
 FROM spokrandt/ubuntu-rails5:latest 
 RUN adduser app --disabled-password --home /app --shell /bin/sh; \
     mkdir /app/.git; \
+    mkdir /app/.bundle; \
     chown app /app/.git; \
+    chown app /app/.bundle; \
     gem install -N io-like -v '0.3.0'; \
     gem install -N archive-zip -v '0.11.0'; \
     gem install -N execjs -v '2.7.0'; \
