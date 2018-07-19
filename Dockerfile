@@ -1,4 +1,4 @@
-FROM spokrandt/alpine-rails5:latest 
+FROM spokrandt/ubuntu-rails5:latest 
 RUN adduser -S app -h /app -s /bin/sh; \
     mkdir /app/.git; \
     chown app /app/.git; \
