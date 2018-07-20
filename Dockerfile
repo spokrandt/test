@@ -2,7 +2,7 @@ FROM ruby:latest
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        mysql-client \
+        mysql-client sqlite \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/app
