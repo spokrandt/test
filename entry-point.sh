@@ -2,6 +2,6 @@
 set -e
 
 rails db:migrate RAILS_ENV=development
-ls -laR
-echo $@
-exec "$@"
+rails server -b 0.0.0.0 -p 30000
+#echo $@
+#exec "$@"
